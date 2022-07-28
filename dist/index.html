@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Windows 10 Install</title>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,700,300'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<section class="welcome">
+  <div>
+    <img src="http://lukeflego.com/win10/logo.png" height="150" alt="">
+    <h2>You have successfully updated to Windows 10</h2>
+    <p>We just need to confirm some information first</p>
+  </div>
+  <button class="get-started">Get Started</button>
+  <button class="revert">Restore Windows 7</button>
+</section>
+<section class="format" hidden>
+  <div>
+    <h1>Formatting drives</h1>
+    <div class="load">
+      <div></div>
+    </div>
+  </div>
+</section>
+<section class="install" hidden>
+  <h1>Installing Windows 10</h1>
+  <h2>Your PC will restart several times. 
+      Sit back and relax</h2>
+      <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 300 300">
+        <circle cx="150" cy="150" r="130" 
+                stroke="#888" stroke-width="5" 
+                fill="transparent" class="fade-in-out"/>
+        <circle cx="50" cy="150" r="130" 
+                stroke="#0087E5" stroke-width="5" 
+                fill="transparent"
+                transform="rotate(-90 100 100)"
+                stroke-dasharray="820" 
+                stroke-dashoffset="820"
+                id="svgLoaderCircle" />
+        <text x="150" y="150" id="svgPercentageText"
+              dominant-baseline="mathematical"
+              alignment-baseline="middle"
+              text-anchor="middle"
+              fromtime="0"
+              totime="100"
+              fill="white" font-size="80">0%</text>
+      </svg>
+  <footer>
+    <ul>
+      <li class="copyFiles">Copying files 
+        <span class="percent" 
+              fromtime="0" 
+              totime="25">
+        </span>
+      </li>
+      <li class="installOS">Installing features and drivers
+        <span class="percent" 
+              fromtime="26" 
+              totime="75">
+        </span>
+      </li>
+      <li class="config">Configuring setting
+        <span class="percent" 
+              fromtime="76" 
+              totime="100">
+        </span>
+      </li>
+    </ul>
+  </footer>
+</section>
+<!-- partial -->
+  <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
